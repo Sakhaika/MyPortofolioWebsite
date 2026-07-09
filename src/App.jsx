@@ -43,6 +43,13 @@ function App() {
           className="w-125 md:ml-auto"
         />
       </div>
+
+      {/* Tentang */}
+      <div className="tentag mt-32 py-10">
+        <div>
+          <p>Hi, perkenalkan saya Sakha Ibadil Kirom</p>
+        </div>
+      </div>
     </>
   );
 }
