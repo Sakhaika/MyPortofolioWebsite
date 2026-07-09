@@ -1,30 +1,48 @@
+import DataImage from "./data";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad qui
-        suscipit repellat quidem quis voluptates blanditiis dolor vitae
-        voluptatum dolorem itaque quas earum, quisquam adipisci dignissimos.
-        Obcaecati rem iusto minima vero fuga laudantium voluptatum, voluptates
-        voluptas. Repellat praesentium aspernatur aliquid vero quam, aut animi
-        quos laborum facere asperiores officiis, mollitia voluptas similique!
-        Beatae veniam facilis animi totam! Excepturi suscipit officiis, vel
-        provident, repudiandae et at possimus aspernatur quis cum quod dolorum
-        harum, sapiente quae nemo. Maiores vitae soluta ea illo dolore enim sit
-        accusantium eos delectus rem deserunt dolor harum inventore laborum ut
-        corrupti sunt, omnis nihil cupiditate facere. Explicabo vel voluptatem
-        necessitatibus ducimus at! Voluptatibus earum, temporibus laboriosam
-        alias in beatae cupiditate distinctio saepe quas recusandae voluptates
-        atque dolor sit ea iste voluptas? Autem voluptate nisi in fuga totam eos
-        atque eum excepturi! Reprehenderit cum dicta explicabo, illum eaque
-        commodi eveniet recusandae esse pariatur ullam, laborum nesciunt
-        asperiores totam eius dolores, odit natus atque est quas ab! Saepe iste,
-        qui blanditiis culpa rerum in esse facere quia delectus molestiae earum
-        maiores placeat praesentium dolores sint tempora ipsam voluptatum, odio
-        dignissimos veritatis, et laudantium distinctio illum. Impedit
-        blanditiis inventore odio voluptatum similique accusamus natus? Quos
-        dolorem dignissimos unde consequuntur?
-      </h1>
+      <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
+        <div>
+          <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
+            <img
+              src={DataImage.HeroImage}
+              alt="Hero Image"
+              className="w-10 rounded-md"
+            />
+            <q>Kode yang indah, lahir dari ketekunan.😊</q>
+          </div>
+          <h1 className="text-5xl/tight font-bold mb-6">
+            Hi, Saya Sakha Ibadil Kirom
+          </h1>
+          <p className="text-base/loose mb-6 opacity-50">
+            Saya Mempunyai ketertarikan dalam bidang Programming dan Designer,
+            terutama pada pembuatan Website dan Desain seperti Poster, Pamflet
+            serta Banner, ketertarikan pada bidang ini sudah berlangsung selama
+            1 tahun untuk semua bidang.
+          </p>
+          <div className="flex items-center sm:gap-4 gap-2">
+            <a
+              href="#"
+              className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600"
+            >
+              Download CV <i className="ri-download-line ri-lg"></i>
+            </a>
+            <a
+              href="#"
+              className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600"
+            >
+              Lihat Proyek <i className="ri-arrow-down-line ri-lg"></i>
+            </a>
+          </div>
+        </div>
+        <img
+          src={DataImage.HeroImage}
+          alt="Hero Image"
+          className="w-125 md:ml-auto"
+        />
+      </div>
     </>
   );
 }
