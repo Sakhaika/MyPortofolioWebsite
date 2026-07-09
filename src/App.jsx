@@ -1,4 +1,5 @@
 import DataImage from "./data";
+import { listTools } from "./data";
 
 function App() {
   return (
@@ -46,7 +47,7 @@ function App() {
 
       {/* Tentang */}
       <div className="tentag mt-32 py-10">
-        <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto bg-zinc-800 rounded-lg">
+        <div className="xl:w-2/3 lg:w-3/4 w-full p-7 mx-auto bg-zinc-800 rounded-lg">
           <img
             src={DataImage.HeroImage}
             alt="image"
@@ -68,20 +69,47 @@ function App() {
             <div className="flex items-center gap-6">
               <div>
                 <h1 className="text-4xl mb-1">
-                  45<span className="text-violet-500"></span>
+                  45<span className="text-violet-500">+</span>
                 </h1>
                 <p>Proyek Selesai</p>
               </div>
               <div>
                 <h1 className="text-4xl mb-1">
-                  45<span className="text-violet-500"></span>
+                  45<span className="text-violet-500">+</span>
                 </h1>
                 <p>Tahun Pengalaman</p>
               </div>
             </div>
           </div>
         </div>
+
+        <div className="tools mt-32">
+          <h1 className="text-4xl/snug font-bold mb-4">Tools yang dipakai</h1>
+          <p className="w-2/5 text-base/loose opacity-50">
+            Berikut ini beberapa tools yang biasa saya pakai untuk pembuatan
+            Website ataupun Design
+          </p>
+          <div className="tools-box mt-14 grid grid-cols-4 gap-4">
+            {listTools.map((tool) => (
+              <div
+                className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group"
+                key={tool.id}
+              >
+                <img
+                  src={tool.gambar}
+                  alt="Tools Image"
+                  className="w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900"
+                />
+                <div>
+                  <h4>{tool.nama}</h4>
+                  <p>{tool.ket}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+      {/* Tentang */}
     </>
   );
 }
