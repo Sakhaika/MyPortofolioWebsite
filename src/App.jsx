@@ -15,7 +15,7 @@ function App() {
             <q>Kode yang indah, lahir dari ketekunan.😊</q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">
-            Hi, Saya Sakha Ibadil Kiromm
+            Hi, Saya Sakha Ibadil Kirom
           </h1>
           <p className="text-base/loose mb-6 opacity-50">
             Saya Mempunyai ketertarikan dalam bidang Programming dan Designer,
