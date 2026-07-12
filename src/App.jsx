@@ -1,5 +1,5 @@
 import DataImage from "./data";
-import { listTools } from "./data";
+import { listTools, listProyek } from "./data";
 
 function App() {
   return (
@@ -110,6 +110,22 @@ function App() {
         </div>
       </div>
       {/* Tentang */}
+
+      {/* Proyek */}
+      <div className="proyek mt-32 py-10">
+        <h1 className="text-center text-4xl font-bold mb-2">Proyek</h1>
+        <p className="text-base/loose text-center opacity-50">
+          Beriku ini beberapa proyek yang telah saya buat.
+        </p>
+        <div className="proyek-box">
+          {listProyek.map((proyek) => (
+            <div key={proyek.id}>
+              <img src={proyek.gambar} alt="Proyek Image" />
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* Proyek */}
     </>
   );
 }
