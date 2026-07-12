@@ -11,6 +11,7 @@ function App() {
               src={DataImage.HeroImage}
               alt="Hero Image"
               className="w-10 rounded-md"
+              loading="lazy"
             />
             <q>Kode yang indah, lahir dari ketekunan.😊</q>
           </div>
@@ -42,6 +43,7 @@ function App() {
           src={DataImage.HeroImage}
           alt="Hero Image"
           className="w-125 md:ml-auto"
+          loading="lazy"
         />
       </div>
 
@@ -52,6 +54,7 @@ function App() {
             src={DataImage.HeroImage}
             alt="image"
             className="w-12 rounded-md mb-10 sm:hidden"
+            loading="lazy"
           />
           <p className="text-base/loose mb-10">
             Hi, perkenalkan saya Sakha Ibadil Kirom, seorang Full Stack Web
@@ -65,6 +68,7 @@ function App() {
               src={DataImage.HeroImage}
               alt="image"
               className="w-12 rounded-md sm:block hidden"
+              loading="lazy"
             />
             <div className="flex items-center gap-6">
               <div>
@@ -99,6 +103,7 @@ function App() {
                   src={tool.gambar}
                   alt="Tools Image"
                   className="w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900"
+                  loading="lazy"
                 />
                 <div>
                   <h4 className="font-bold">{tool.nama}</h4>
@@ -117,10 +122,30 @@ function App() {
         <p className="text-base/loose text-center opacity-50">
           Beriku ini beberapa proyek yang telah saya buat.
         </p>
-        <div className="proyek-box">
+        <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
           {listProyek.map((proyek) => (
-            <div key={proyek.id}>
-              <img src={proyek.gambar} alt="Proyek Image" />
+            <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md">
+              <img src={proyek.gambar} alt="Proyek Image" loading="lazy" />
+              <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>
+              <p className="text-base/loose mb-4">{proyek.desk}</p>
+              <div className="flex flex-wrap gap-2">
+                {proyek.tools.map((tool, index) => (
+                  <p
+                    className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold"
+                    key={index}
+                  >
+                    {tool}
+                  </p>
+                ))}
+              </div>
+              <div className="mt-8 text-center">
+                <a
+                  href="#"
+                  className="bg-violet-700 p-3 rounded-lg border block border-zinc-600 hover:bg-violet-600"
+                >
+                  Lihat Website
+                </a>
+              </div>
             </div>
           ))}
         </div>
