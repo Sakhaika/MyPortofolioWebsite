@@ -151,6 +151,53 @@ function App() {
         </div>
       </div>
       {/* Proyek */}
+      <div className="kontak mt-32 p-10">
+        <h1 className="text-4xl mb-2 font-bold text-center">Kontak</h1>
+        <p className="text-base/loose text-center mb-10 opacity-50">
+          Mari Terhubung dengan Saya.
+        </p>
+        <form action="">
+          <div>
+            <div>
+              <label>Nama Lengkap</label>
+              <input
+                type="text"
+                name="nama"
+                placeholder="Masukan Nama"
+                required
+              />
+            </div>
+            <div>
+              <label>Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Masukan Email"
+                required
+              />
+            </div>
+            <div>
+              <label>Nama Lengkap</label>
+              <input
+                type="text"
+                name="nama"
+                placeholder="Masukan Nama"
+                required
+              />
+            </div>
+            <div>
+              <label>Nama Lengkap</label>
+              <input
+                type="text"
+                name="nama"
+                placeholder="Masukan Nama"
+                required
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      {/* Kontak */}
     </>
   );
 }
