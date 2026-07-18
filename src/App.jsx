@@ -229,7 +229,7 @@ function App() {
                 id="pesan"
                 cols="45"
                 rows="7"
-                placeholder="Pesan..."
+                placeholder="Pesan.."
                 className="border border-zinc-500 p-2 rounded-md"
                 required
               ></textarea>
