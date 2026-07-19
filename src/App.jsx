@@ -13,7 +13,7 @@ function App() {
               className="w-10 rounded-md"
               loading="lazy"
             />
-            <q>Kode yang indah, lahir dari ketekunan.😊</q>
+            <q>Kode yang indah, lahir dari konsistensi.</q>
           </div>
           <h1 className="text-5xl/tight font-bold mb-6">
             Hi, Saya Sakha Ibadil Kirom
@@ -78,13 +78,13 @@ function App() {
             <div className="flex items-center gap-6">
               <div>
                 <h1 className="text-4xl mb-1">
-                  45<span className="text-violet-500">+</span>
+                  10<span className="text-violet-500">+</span>
                 </h1>
                 <p>Proyek Selesai</p>
               </div>
               <div>
                 <h1 className="text-4xl mb-1">
-                  45<span className="text-violet-500">+</span>
+                  3<span className="text-violet-500">+</span>
                 </h1>
                 <p>Tahun Pengalaman</p>
               </div>

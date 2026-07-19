@@ -8,17 +8,11 @@ const Footer = () => {
         <a href="#proyek">Proyek</a>
       </div>
       <div className="flex items-center gap-3">
-        <a href="#">
+        <a href="http://github.com/Sakhaika">
           <i className="ri-github-fill ri-2x"></i>
         </a>
-        <a href="#">
-          <i className="ri-instagram-fill ri-2x"></i>
-        </a>
-        <a href="#">
-          <i className="ri-facebook-fill ri-2x"></i>
-        </a>
-        <a href="#">
-          <i className="ri-youtube-fill ri-2x"></i>
+        <a href="http://www.linkedin.com/in/sakhaik">
+          <i className="ri-linkedin-fill ri-2x"></i>
         </a>
       </div>
     </div>
