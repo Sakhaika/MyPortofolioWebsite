@@ -32,7 +32,7 @@ function App() {
               Download CV <i className="ri-download-line ri-lg"></i>
             </a>
             <a
-              href="#"
+              href="#proyek"
               className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600"
             >
               Lihat Proyek <i className="ri-arrow-down-line ri-lg"></i>
@@ -48,11 +48,12 @@ function App() {
       </div>
 
       {/* Tentang */}
-      <div className="tentag mt-32 py-10">
+      <div className="tentag mt-32 py-10" id="tentang">
         <div
           className="xl:w-2/3 lg:w-3/4 w-full p-7 mx-auto bg-zinc-800 rounded-lg"
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-once="true"
         >
           <img
             src={DataImage.HeroImage}
@@ -96,6 +97,7 @@ function App() {
             className="text-4xl/snug font-bold mb-4"
             data-aos="fade-up"
             data-aos-duration="1000"
+            data-aos-once="true"
           >
             Tools yang dipakai
           </h1>
@@ -103,7 +105,8 @@ function App() {
             className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="3000"
+            data-aos-delay="300"
+            data-aos-once="true"
           >
             Berikut ini beberapa tools yang biasa saya pakai untuk pembuatan
             Website ataupun Design
@@ -115,7 +118,7 @@ function App() {
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay={tool.dad}
-                key={tool.id}
+                data-aos-once="true"
               >
                 <img
                   src={tool.gambar}
@@ -135,11 +138,12 @@ function App() {
       {/* Tentang */}
 
       {/* Proyek */}
-      <div className="proyek mt-32 py-10">
+      <div className="proyek mt-32 py-10" id="proyek">
         <h1
           className="text-center text-4xl font-bold mb-2"
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-once="true"
         >
           Proyek
         </h1>
@@ -147,7 +151,8 @@ function App() {
           className="text-base/loose text-center opacity-50"
           data-aos="fade-up"
           data-aos-duration="1000"
-          data-aos-delay="3000"
+          data-aos-delay="300"
+          data-aos-once="true"
         >
           Beriku ini beberapa proyek yang telah saya buat.
         </p>
@@ -159,6 +164,7 @@ function App() {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={proyek.dad}
+              data-aos-once="true"
             >
               <img src={proyek.gambar} alt="Proyek Image" loading="lazy" />
               <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>
@@ -188,15 +194,32 @@ function App() {
       {/* proyek */}
 
       {/* kontak */}
-      <div className="kontak mt-32 sm:p-10 p-0">
-        <h1 className="text-4xl mb-2 font-bold text-center">Kontak</h1>
-        <p className="text-base/loose text-center mb-10 opacity-50">
+      <div className="kontak mt-32 sm:p-10 p-0" id="kontak">
+        <h1
+          className="text-4xl mb-2 font-bold text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Kontak
+        </h1>
+        <p
+          className="text-base/loose text-center mb-10 opacity-50"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          data-aos-once="true"
+        >
           Mari Terhubung dengan Saya.
         </p>
         <form
           action="https://formsubmit.co/sakha00119@gmail.com"
           method="POST"
           className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          data-aos-once="true"
           autoComplete="off"
         >
           <div className="flex flex-col gap-6">
